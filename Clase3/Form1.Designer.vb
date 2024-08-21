@@ -29,6 +29,7 @@ Partial Class Form1
         T2 = New TextBox()
         Button1 = New Button()
         c1 = New ComboBox()
+        Button2 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -92,11 +93,21 @@ Partial Class Form1
         c1.Size = New Size(100, 23)
         c1.TabIndex = 6
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(37, 358)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(202, 23)
+        Button2.TabIndex = 7
+        Button2.Text = "Ir a otra ventana"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(275, 418)
+        Controls.Add(Button2)
         Controls.Add(c1)
         Controls.Add(Button1)
         Controls.Add(T2)
@@ -118,5 +129,6 @@ Partial Class Form1
     Friend WithEvents T2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents c1 As ComboBox
+    Friend WithEvents Button2 As Button
 
 End Class
